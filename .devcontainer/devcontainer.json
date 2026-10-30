@@ -1,10 +1,6 @@
 {
-  "name": "Pneumonia detection - Streamlit",
-  "image": "mcr.microsoft.com/devcontainers/python:3.11",
-  "features": { "ghcr.io/devcontainers/features/docker-in-docker:2": {} },
+  "name": "pneumonia-app",
+  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
   "forwardPorts": [8501],
-  "portsAttributes": { "8501": { "label": "Streamlit app", "onAutoForward": "openBrowser" } },
-  "postCreateCommand": "pip install --no-cache-dir -r requirements.txt",
-  "postAttachCommand": "streamlit run app.py --server.port 8501 --server.address 0.0.0.0",
-  "customizations": { "vscode": { "extensions": ["ms-python.python"] } }
+  "portsAttributes": { "8501": { "label": "Streamlit", "onAutoForward": "openBrowser" } }
 }
