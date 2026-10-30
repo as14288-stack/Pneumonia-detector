@@ -1,0 +1,14 @@
+{
+  "model_name": "ResNet50 fine-tuned",
+  "input_size": 224,
+  "threshold": 0.195,
+  "target_recall": 0.9,
+  "classes": [
+    "No pneumonia flagged",
+    "Pneumonia likely"
+  ],
+  "test_auc": 0.8583680537928184,
+  "test_recall_at_threshold": 0.9124168514412417,
+  "test_specificity_at_threshold": 0.5978716543050628,
+  "tf_version": "2.21.0"
+}
